@@ -1,11 +1,12 @@
 import ProjectList from "@/components/project/project-list";
-import sampleProject from "@/db/sample-projects";
+import { getLatestProjects } from "@/lib/actions/project.action";
 export const metadata = {
   title: "Home",
 }
-const HomePage = () => {
+const HomePage = async () => {
+  const projects = await getLatestProjects();
   return <>
-    <ProjectList data={sampleProject.projects} title="Latest Projects" limit={4} />
+    <ProjectList data={projects} title="Latest Projects" limit={4} />
   </>
 }
  

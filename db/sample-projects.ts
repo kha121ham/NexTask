@@ -1,4 +1,4 @@
-const sampleProject = {
+const sampleProjects = {
   projects: [
     {
       title: "Redesign Company Landing Page",
@@ -7,8 +7,11 @@ const sampleProject = {
       status: "Not Started",
       priority: "Medium",
       image: "/images/sample-products/img1.png",
-      dueDate: "2025-09-01T00:00:00.000Z",
-      team: ["64faed29e123456789abcd03", "64faed29e123456789abcd04"],
+      dueDate: new Date("2025-09-01T00:00:00.000Z"),
+      team: [
+        "64faed29e123456789abcd03",
+        "64faed29e123456789abcd04"
+      ],
       owner: "64faed29e123456789abcd00",
     },
     {
@@ -18,8 +21,10 @@ const sampleProject = {
       status: "In Progress",
       priority: "High",
       image: "/images/sample-products/img2.jpg",
-      dueDate: "2025-08-28T00:00:00.000Z",
-      team: ["64faed29e123456789abcd02"],
+      dueDate: new Date("2025-08-28T00:00:00.000Z"),
+      team: [
+        "64faed29e123456789abcd02"
+      ],
       owner: "64faed29e123456789abcd00",
     },
     {
@@ -29,11 +34,11 @@ const sampleProject = {
       status: "Completed",
       priority: "Low",
       image: "/images/sample-products/img3.jpg",
-      dueDate: "2025-07-15T00:00:00.000Z",
+      dueDate: new Date("2025-07-15T00:00:00.000Z"),
       team: [],
       owner: "64faed29e123456789abcd00",
-    },
-  ],
+    }
+  ]
 };
 
-export default sampleProject;
+export default sampleProjects;
